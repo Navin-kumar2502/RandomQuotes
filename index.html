@@ -52,7 +52,7 @@
             data.author==null?(author.innerText='By Unknown'):(author.innerText='By ' + `${data.author}`);
         }
         const getQuotes = async ()=>{
-            const api="";
+            const api="https://type.fit/api/quotes";
             try{
                 let data=await fetch(api);
                 realData=await data.json();
