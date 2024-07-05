@@ -46,7 +46,7 @@
             window.open(post);
         }
         const ngetQuotes =()=>{
-            let num=Math.floor(Math.random()*1643);
+            let num=Math.floor(Math.random()*16);
             data=realData[num];
             quotes.innerText=`${data.text}`;
             data.author==null?(author.innerText='By Unknown'):(author.innerText='By ' + `${data.author}`);
